@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Data Peserta</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Library Excel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Pencarian Data Peserta</h2>
+
+        <div class="search-box">
+            <input
+                type="number"
+                id="nisn"
+                placeholder="Masukkan NISN"
+            >
+
+            <button onclick="cariData()">
+                Cari
+            </button>
+        </div>
+
+        <div id="hasil"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
